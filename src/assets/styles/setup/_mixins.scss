@@ -66,4 +66,34 @@
   }
 }
 
-
+// Fonts
+@mixin h1-large {
+  font-family: Livvic-Bold;
+  font-size: em(100px);
+  // line-height: em(100px);
+}
+@mixin h1-small {
+  font-family: Livvic-Bold;
+  font-size: em(64px);
+  // line-height: em(56px);
+}
+@mixin h2 {
+  font-family: Livvic-Bold;
+  font-size: em(48px);
+  // line-height: em(48px);
+}
+@mixin h3 {
+  font-family: Livvic-Bold;
+  font-size: em(18px);
+  // line-height: em(28px);
+}
+@mixin body-1 {
+  font-family: Livvic-Semi-Bold;
+  font-size: em(18px);
+  // line-height: em(28px);
+}
+@mixin body-2 {
+  font-family: Livvic-Semi-Bold;
+  font-size: em(15px);
+  // line-height: em(25px);
+}

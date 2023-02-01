@@ -6,7 +6,6 @@
 
   > * {
     grid-column: 2;
-
     &.full {
       grid-column: 1 /-1;
     }
@@ -30,12 +29,12 @@
   }
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+// .app {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
 
-  & main {
-    flex-grow: 1;
-  }
-}
+//   & main {
+//     flex-grow: 1;
+//   }
+// }

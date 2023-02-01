@@ -1,0 +1,115 @@
+.home-section {
+  display: flex;
+  flex-direction: column;
+  &-header {
+    // grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $primary-color-1;
+    &-main-nav {
+      &-logo {
+        color: $primary-color-3;
+      }
+      &-link {
+        color: $primary-color-3;
+      }
+      &-contact-btn {
+      }
+    }
+  }
+
+  &-hero {
+    // grid-area: hero;
+    background-color: $primary-color-1;
+    &-title {
+      @include h1-large;
+      color: $primary-color-3;
+      & span {
+        color: $primary-color-2;
+      }
+    }
+    &-description {
+      @include body-1;
+      color: $primary-color-3;
+    }
+  }
+
+  &-description {
+    // grid-area: description;
+    background-color: $secondary-color-4;
+    &-title {
+      @include h2;
+      color: $primary-color-3;
+    }
+    &-skills-container {
+      &-skill {
+        &-img {
+          background-color: red;
+          min-width: 56px;
+          max-width: 56px;
+          min-height: 56px;
+          max-height: 56px;
+        }
+        &-title {
+          @include h3;
+          color: $primary-color-2;
+        }
+        &-description {
+          @include body-2;
+          color: $primary-color-3;
+        }
+      }
+    }
+  }
+
+  &-reviews {
+    // grid-area: reviews;
+    background-color: $secondary-color-3;
+    &-title {
+      @include h2;
+      color: $primary-color-3;
+      & span {
+        color: $secondary-color-1;
+      }
+    }
+    &-container {
+      &-review {
+        &-quotation-img {
+          min-width: 67px;
+          max-width: 67px;
+          min-height: 56px;
+          max-height: 56px;
+        }
+        &-description {
+          @include body-2;
+          color: $primary-color-3;
+        }
+        &-client-title {
+          @include h3;
+          color: $secondary-color-1;
+        }
+        &-client-img {
+          border-radius: 50%;
+          border: 2px solid #c4fffe;
+        }
+      }
+    }
+  }
+
+  &-contact {
+    // grid-area: contact;
+    background-color: $primary-color-2;
+    &-title {
+      @include h3;
+      color: $secondary-color-4;
+    }
+    &-btn {
+    }
+  }
+
+  &-footer {
+    // grid-area: footer;
+    background-color: $secondary-color-5;
+  }
+}
