@@ -1,50 +1,86 @@
 .home-section {
   display: flex;
   flex-direction: column;
+  text-align: left;
   &-header {
     // grid-area: header;
+    background-color: $primary-color-1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: $primary-color-1;
+    padding-top: 73px;
+    padding-bottom: 129px;
+    padding-left: 165px;
+    padding-right: 165px;
     &-main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40px;
       &-logo {
         color: $primary-color-3;
+        padding-right: 40px;
       }
       &-link {
+        @include body-1;
         color: $primary-color-3;
       }
-      &-contact-btn {
-      }
+    }
+    &-contact-btn {
     }
   }
 
   &-hero {
     // grid-area: hero;
     background-color: $primary-color-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 250px;
+    padding-left: 165px;
+    padding-right: 165px;
     &-title {
       @include h1-large;
       color: $primary-color-3;
       & span {
         color: $primary-color-2;
       }
+      max-width: 635px;
     }
     &-description {
       @include body-1;
       color: $primary-color-3;
+      max-width: 445px;
     }
   }
 
   &-description {
     // grid-area: description;
     background-color: $secondary-color-4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 165px;
+    padding-right: 165px;
     &-title {
       @include h2;
       color: $primary-color-3;
+      max-width: 445px;
     }
     &-skills-container {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      max-width: 540px;
       &-skill {
+        display: grid;
+        grid-template-areas:
+          'img title'
+          'img description';
         &-img {
+          grid-area: img;
           background-color: red;
           min-width: 56px;
           max-width: 56px;
@@ -52,10 +88,12 @@
           max-height: 56px;
         }
         &-title {
+          grid-area: title;
           @include h3;
           color: $primary-color-2;
         }
         &-description {
+          grid-area: description;
           @include body-2;
           color: $primary-color-3;
         }
@@ -66,15 +104,27 @@
   &-reviews {
     // grid-area: reviews;
     background-color: $secondary-color-3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 165px;
+    padding-right: 165px;
     &-title {
       @include h2;
       color: $primary-color-3;
       & span {
         color: $secondary-color-1;
       }
+      text-align: center;
     }
     &-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
       &-review {
+        max-width: 350px;
         &-quotation-img {
           min-width: 67px;
           max-width: 67px;
@@ -100,6 +150,13 @@
   &-contact {
     // grid-area: contact;
     background-color: $primary-color-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    padding-left: 165px;
+    padding-right: 165px;
     &-title {
       @include h3;
       color: $secondary-color-4;
@@ -111,5 +168,9 @@
   &-footer {
     // grid-area: footer;
     background-color: $secondary-color-5;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }

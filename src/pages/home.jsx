@@ -8,9 +8,11 @@ export function Home() {
     return (
       <header className="home-section-header">
         <nav className="home-section-header-main-nav">
-          <a className="home-section-header-main-nav-logo" href="#">
-            myteam
-          </a>
+          <img
+            className="home-section-header-main-nav-logo"
+            src=""
+            alt="Logo"
+          />
           <a className="home-section-header-main-nav-link" href="#">
             home
           </a>
@@ -60,6 +62,34 @@ export function Home() {
               passionate about what they do.
             </h3>
           </article>
+          <article className="home-section-description-skills-container-skill">
+            <img
+              className="home-section-description-skills-container-skill-img"
+              src=""
+              alt="Experienced Individuals"
+            />
+            <h2 className="home-section-description-skills-container-skill-title">
+              Experienced Individuals
+            </h2>
+            <h3 className="home-section-description-skills-container-skill-description">
+              Our network is made up of highly experienced professionals who are
+              passionate about what they do.
+            </h3>
+          </article>
+          <article className="home-section-description-skills-container-skill">
+            <img
+              className="home-section-description-skills-container-skill-img"
+              src=""
+              alt="Experienced Individuals"
+            />
+            <h2 className="home-section-description-skills-container-skill-title">
+              Experienced Individuals
+            </h2>
+            <h3 className="home-section-description-skills-container-skill-description">
+              Our network is made up of highly experienced professionals who are
+              passionate about what they do.
+            </h3>
+          </article>
         </section>
       </article>
     )
@@ -74,6 +104,46 @@ export function Home() {
         </h1>
         <section className="home-section-reviews-container">
           {/* // TODO: *3 */}
+          <article className="home-section-reviews-container-review">
+            <img
+              className="home-section-reviews-container-review-quotation-img"
+              src=""
+              alt="Quotation"
+            />
+            <h3 className="home-section-reviews-container-review-description">
+              “The team perfectly fit the specialized skill set required. They
+              focused on the most essential features helping us launch the
+              platform eight months faster than planned.”
+            </h3>
+            <h2 className="home-section-reviews-container-review-client-title">
+              Kady Baker
+            </h2>
+            <img
+              className="home-section-reviews-container-review-client-img"
+              src=""
+              alt="Kady Baker"
+            />
+          </article>
+          <article className="home-section-reviews-container-review">
+            <img
+              className="home-section-reviews-container-review-quotation-img"
+              src=""
+              alt="Quotation"
+            />
+            <h3 className="home-section-reviews-container-review-description">
+              “The team perfectly fit the specialized skill set required. They
+              focused on the most essential features helping us launch the
+              platform eight months faster than planned.”
+            </h3>
+            <h2 className="home-section-reviews-container-review-client-title">
+              Kady Baker
+            </h2>
+            <img
+              className="home-section-reviews-container-review-client-img"
+              src=""
+              alt="Kady Baker"
+            />
+          </article>
           <article className="home-section-reviews-container-review">
             <img
               className="home-section-reviews-container-review-quotation-img"
@@ -113,7 +183,7 @@ export function Home() {
   }
 
   return (
-    <section className="home-section main-container main-layout">
+    <section className="home-section">
       <Header />
       <Hero />
       <Description />
