@@ -1,0 +1,15 @@
+//* COLORS
+//background
+$main-bg-color: #fafbfc;
+
+//* LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 600px;
+$break-normal: 900px;
+$break-wide: 1100px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;

@@ -1,0 +1,16 @@
+//* Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+@import 'setup/typography';
+
+//* Basics
+@import 'basics/normalize';
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/base';
+
+//* Views
+@import 'views/home';
+
+//* Components
