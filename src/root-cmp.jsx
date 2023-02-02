@@ -7,11 +7,9 @@ import { Home } from './pages/home'
 export function RootCmp() {
   return (
     <div className="main-layout app">
-      <main>
-        <Routes>
-          <Route element={<Home />} path="/" />
-        </Routes>
-      </main>
+      <Routes>
+        <Route element={<Home />} path="/" />
+      </Routes>
     </div>
   )
 }

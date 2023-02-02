@@ -48,49 +48,32 @@ export function Home() {
         </h1>
         <section className="home-section-description-skills-container">
           {/* // TODO: *3 */}
-          <article className="home-section-description-skills-container-skill">
-            <img
-              className="home-section-description-skills-container-skill-img"
-              src=""
-              alt="Experienced Individuals"
-            />
-            <h2 className="home-section-description-skills-container-skill-title">
-              Experienced Individuals
-            </h2>
-            <h3 className="home-section-description-skills-container-skill-description">
-              Our network is made up of highly experienced professionals who are
-              passionate about what they do.
-            </h3>
-          </article>
-          <article className="home-section-description-skills-container-skill">
-            <img
-              className="home-section-description-skills-container-skill-img"
-              src=""
-              alt="Experienced Individuals"
-            />
-            <h2 className="home-section-description-skills-container-skill-title">
-              Experienced Individuals
-            </h2>
-            <h3 className="home-section-description-skills-container-skill-description">
-              Our network is made up of highly experienced professionals who are
-              passionate about what they do.
-            </h3>
-          </article>
-          <article className="home-section-description-skills-container-skill">
-            <img
-              className="home-section-description-skills-container-skill-img"
-              src=""
-              alt="Experienced Individuals"
-            />
-            <h2 className="home-section-description-skills-container-skill-title">
-              Experienced Individuals
-            </h2>
-            <h3 className="home-section-description-skills-container-skill-description">
-              Our network is made up of highly experienced professionals who are
-              passionate about what they do.
-            </h3>
-          </article>
+          <DescriptionPreview
+            title={'Experienced Individuals'}
+            description={
+              'Our network is made up of highly experienced professionals who are passionate about what they do.'
+            }
+            imgUrl={'src/assets/images/icon-person.svg'}
+          />
         </section>
+      </article>
+    )
+  }
+
+  function DescriptionPreview({ title, description, imgUrl }) {
+    return (
+      <article className="home-section-description-skills-container-skill">
+        <img
+          className="home-section-description-skills-container-skill-img"
+          src={imgUrl} //! Not working
+          alt={title}
+        />
+        <h2 className="home-section-description-skills-container-skill-title">
+          {title}
+        </h2>
+        <h3 className="home-section-description-skills-container-skill-description">
+          {description}
+        </h3>
       </article>
     )
   }
